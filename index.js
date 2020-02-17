@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const getData = require('./workers/index');
-
+require('dotenv').config();
 app.use(cors());
 
 getData();
